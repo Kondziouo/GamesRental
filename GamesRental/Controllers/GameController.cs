@@ -1,33 +1,25 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using GamesRental.Data;
+using GamesRental.Models;
+using Microsoft.AspNetCore.Mvc;
 
 namespace GamesRental.Controllers
 {
     public class GameController : Controller
     {
+        private readonly AppDbContext _context;
+
+        public GameController (AppDbContext context)
+        {
+            _context = context;
+        }
+
+
+    
         public IActionResult Index()
         {
-            return View();
+            List<Game> games = _context.Games.ToList();
+            return View(games);
         }
-
-
-        public IActionResult AddTask(TaskViewModel model)
-        {
-            if (ModelState.IsValid)
-            {
-                EmployeeTask task = new EmployeeTask
-                {
-                    TaskDescription = model.TaskDescription,
-                    TaskEnd = model.TaskEnd,
-                    TaskStart = model.TaskStart,
-                    TaskName = model.TaskName,
-                    EmployeeId = GetUserId()
-                };
-
-                taskRepository.Create(task);
-                return RedirectToAction("Index");
-            }
-
-            return View(model);
-        }
+        
     }
 }
