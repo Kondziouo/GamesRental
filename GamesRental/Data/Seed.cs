@@ -22,7 +22,7 @@ namespace GamesRental.Data
                         new Game()
                         {
                             Title = "Fifa 23",
-                            Image = "https://www.sport.pl/sport/7,164252,28703584,znamy-okladki-fifa-23-ostatni-raz-z-ta-nazwa.html",
+                            Image = "https://www.fifplay.com/img/public/fifa-23-cover-star-kylian-mbappe.jpg",
                             Description = "FIFA 23 is a football video game published by Electronic Arts.",
                             PricePerMonth = 30,
                             Price = 249
@@ -30,7 +30,7 @@ namespace GamesRental.Data
                         new Game()
                         {
                             Title = "God of War",
-                            Image = "https://www.mobygames.com/game/god-of-war_/cover-art/gameCoverId,474565/",
+                            Image = "https://www.mobygames.com/images/covers/l/474565-god-of-war-playstation-4-front-cover.png",
                             Description = "In God of War, players control Kratos, a Spartan warrior who is sent by the Greek gods to kill Ares, the god of war.",
                             PricePerMonth = 50,
                             Price = 299
@@ -38,7 +38,7 @@ namespace GamesRental.Data
                         new Game()
                         {
                             Title = "Elden Ring",
-                            Image = "https://i.redd.it/bueqtztxmnj81.png",
+                            Image = "https://static.techspot.com/images2/news/bigimage/2022/03/2022-03-17-image-37-j_1100.webp",
                             Description = "Elden Ring is an action role-playing game played in a third person perspective, with gameplay focusing on combat and exploration.",
                             PricePerMonth = 19,
                             Price = 199
