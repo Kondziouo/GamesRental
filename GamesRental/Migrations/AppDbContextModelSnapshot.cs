@@ -122,10 +122,6 @@ namespace GamesRental.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
-                    b.Property<string>("Category")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("Description")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -134,13 +130,8 @@ namespace GamesRental.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Price")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("PricePerMonth")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<decimal>("Price")
+                        .HasColumnType("decimal(18,2)");
 
                     b.Property<string>("Title")
                         .IsRequired()
@@ -159,7 +150,7 @@ namespace GamesRental.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
-                    b.Property<int>("GamesId")
+                    b.Property<int>("GameId")
                         .HasColumnType("int");
 
                     b.Property<bool>("IsPaid")
@@ -170,20 +161,20 @@ namespace GamesRental.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("GamesId");
+                    b.HasIndex("GameId");
 
                     b.ToTable("Orders");
                 });
 
             modelBuilder.Entity("GamesRental.Models.Order", b =>
                 {
-                    b.HasOne("GamesRental.Models.Game", "Games")
+                    b.HasOne("GamesRental.Models.Game", "Game")
                         .WithMany()
-                        .HasForeignKey("GamesId")
+                        .HasForeignKey("GameId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("Games");
+                    b.Navigation("Game");
                 });
 #pragma warning restore 612, 618
         }

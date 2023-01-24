@@ -24,7 +24,6 @@ namespace GamesRental.Data
                             Title = "Game1",
                             Image = "https://static.techspot.com/images2/news/bigimage/2022/03/2022-03-17-image-37-j_1100.webp",
                             Description = "Elden Ring is an action role-playing game played in a third person perspective, with gameplay focusing on combat and exploration.",
-                            PricePerMonth = 19,
                             Price = 199
                          },
                         new Game()
@@ -32,7 +31,6 @@ namespace GamesRental.Data
                             Title = "Game2",
                             Image = "https://static.techspot.com/images2/news/bigimage/2022/03/2022-03-17-image-37-j_1100.webp",
                             Description = "Elden Ring is an action role-playing game played in a third person perspective, with gameplay focusing on combat and exploration.",
-                            PricePerMonth = 19,
                             Price = 199
                         },
                         new Game()
@@ -40,7 +38,6 @@ namespace GamesRental.Data
                             Title = "Game3",
                             Image = "https://static.techspot.com/images2/news/bigimage/2022/03/2022-03-17-image-37-j_1100.webp",
                             Description = "Elden Ring is an action role-playing game played in a third person perspective, with gameplay focusing on combat and exploration.",
-                            PricePerMonth = 19,
                             Price = 199
                         }
                     });
