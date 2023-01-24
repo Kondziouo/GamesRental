@@ -21,6 +21,12 @@ namespace GamesRental.Controllers
             List<Game> games = _context.Games.ToList();
             return View(games);
         }
+
+        public IActionResult Detail(int id)
+        {
+            Game game = _context.Games.FirstOrDefault(x => x.Id == id);
+            return View(game);
+        }
         
     }
 }

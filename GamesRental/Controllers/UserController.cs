@@ -17,5 +17,11 @@ namespace GamesRental.Controllers
             List<Customer> customers = _context.Customers.ToList();
             return View(customers);
         }
+
+        public IActionResult Detail(int id)
+        {
+            Customer customer = _context.Customers.FirstOrDefault(x => x.Id == id);
+            return View(customer);
+        }
     }
 }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aoSVffSfLZKXcE+zhhHxxlh47uaYqxb7LeekVJmtWQeLEYFQ+d/KV14IIvDq9KKt7jur/W21LCyXn6bDWIV6TQ==",
+  "dgSpecHash": "Z9rY2Ogs1NWEAhFqDNPHM5+8mr33WXl9MOrFWlM1mmhvdErPhwW0gLmDTNEBrKzn3jyK41s1CGWhVEwbi1AbSQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Kondziouo\\source\\repos\\GamesRental\\GamesRental\\GamesRental.csproj",
+  "projectFilePath": "C:\\Users\\Kondziouo\\Source\\Repos\\GamesRental\\GamesRental\\GamesRental.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Kondziouo\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Kondziouo\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
