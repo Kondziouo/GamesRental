@@ -15,7 +15,7 @@ namespace GamesRental.Controllers
 
 
     
-        public IActionResult Game()
+        public IActionResult Index()
         {
             List<Game> games = _context.Games.ToList();
             return View(games);

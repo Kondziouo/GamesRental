@@ -16,8 +16,8 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Kondziouo\Source\Repos\GamesRental\GamesRental
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Kondziouo/Source/Repos/GamesRental/GamesRental/Views/Game/Game.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FtZVxHYW1lLmNzaHRtbA==
+[C:/Users/Kondziouo/Source/Repos/GamesRental/GamesRental/Views/Game/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FtZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Kondziouo/Source/Repos/GamesRental/GamesRental/Views/Home/Index.cshtml]
