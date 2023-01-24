@@ -1,6 +1,7 @@
 ﻿using GamesRental.Data;
 using GamesRental.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace GamesRental.Controllers
 {
