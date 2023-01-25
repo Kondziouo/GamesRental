@@ -50,7 +50,8 @@ namespace GamesRental.Data
                         new Customer()
                         {
                             FirstName = "Robinson",
-                            LastName = "Cruse"
+                            LastName = "Cruse",
+                            email = "robinson@test"
                         }
                     });
                     context.SaveChanges();

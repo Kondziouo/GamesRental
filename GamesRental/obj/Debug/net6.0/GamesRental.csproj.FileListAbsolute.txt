@@ -554,3 +554,4 @@ C:\Users\Kondziouo\source\repos\GamesRental\GamesRental\GamesRental\obj\Debug\ne
 C:\Users\Kondziouo\source\repos\GamesRental\GamesRental\GamesRental\obj\Debug\net6.0\GamesRental.pdb
 C:\Users\Kondziouo\source\repos\GamesRental\GamesRental\GamesRental\obj\Debug\net6.0\GamesRental.genruntimeconfig.cache
 C:\Users\Kondziouo\source\repos\GamesRental\GamesRental\GamesRental\obj\Debug\net6.0\ref\GamesRental.dll
+C:\Users\Kondziouo\Source\Repos\GamesRental\GamesRental\bin\Debug\net6.0\CloudinaryDotNet.dll
