@@ -11,13 +11,13 @@ namespace GamesRental.Models
         public string FirstName { get; set; }
         [Required(ErrorMessage = "Last Name is required")]
         public string LastName { get; set; }
-        [RegularExpression("^[0-9]*$")]
         [Required(ErrorMessage = "Date of birth is required")]
-        public DateTime DateOfBirth { get; set; }
+        public DateOnly DateOfBirth { get; set; }
         [RegularExpression("^[0-9]*$")]
         [Required(ErrorMessage = "Contact number is required")]
         public string ContactNumber { get; set; }
         [RegularExpression(".+\\@.+\\.[a-z]{2,3}")]
+        [Required(ErrorMessage = "Address email is required")]
         public string Email { get; set; }
 
     }

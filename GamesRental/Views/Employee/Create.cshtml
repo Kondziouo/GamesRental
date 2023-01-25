@@ -1,0 +1,36 @@
+﻿@model Employee
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+
+<form method="post" asp-action="Create">
+    <div class="form-group">
+        <label asp-for="FirstName"> First name </label>
+        <input asp-for="FirstName" class="form-control" placeholder="First name">
+        <span asp-validation-for="FirstName" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="LastName"> Last name </label>
+        <input asp-for="LastName" class="form-control" placeholder="Last name">
+        <span asp-validation-for="LastName" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="DateOfBirth"> Date of birth </label>
+        <input asp-for="DateOfBirth" class="form-control" placeholder="Date of birth">
+        <span asp-validation-for="DateOfBirth" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="ContactNumber"> Contact number </label>
+        <input asp-for="ContactNumber" class="form-control" placeholder="Contact number">
+        <span asp-validation-for="ContactNumber" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Email"> Email </label>
+        <input asp-for="Email" class="form-control" placeholder="Email">
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

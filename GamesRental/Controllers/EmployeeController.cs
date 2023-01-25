@@ -26,5 +26,23 @@ namespace GamesRental.Controllers
             Employee employee = await _employeeRepository.GetByIdAsync(id);
             return View(employee);
         }
+
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Create(Employee employee)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(employee);
+            }
+            _employeeRepository.Add(employee);
+            return RedirectToAction("Index");
+        }
+
+
     }
 }
