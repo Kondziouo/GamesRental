@@ -1,31 +1,50 @@
 ﻿using GamesRental.Data;
+using GamesRental.Interfaces;
 using GamesRental.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using GamesRental.Repository;
 
 namespace GamesRental.Controllers
 {
     public class GameController : Controller
     {
-        private readonly AppDbContext _context;
+        private readonly IGameRepository _gameRepository;
 
-        public GameController (AppDbContext context)
+        public GameController (IGameRepository gameRepository)
         {
-            _context = context;
+            _gameRepository = gameRepository;
         }
 
 
     
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            List<Game> games = _context.Games.ToList();
+            IEnumerable<Game> games = await _gameRepository.GetAll();
             return View(games);
         }
 
-        public IActionResult Detail(int id)
+        public async Task<IActionResult> Detail(int id)
         {
-            Game game = _context.Games.FirstOrDefault(x => x.Id == id);
+            Game game = await _gameRepository.GetByIdAsync(id);
             return View(game);
+        }
+
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Create (Game game)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(game);
+            }
+
+            _gameRepository.Add(game);
+            return RedirectToAction("Index");
         }
         
     }

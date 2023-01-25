@@ -1,28 +1,29 @@
 ﻿using GamesRental.Data;
+using GamesRental.Interfaces;
 using GamesRental.Models;
 using Microsoft.AspNetCore.Mvc;
+using GamesRental.Repository;
 
 namespace GamesRental.Controllers
 {
     public class EmployeeController : Controller
     {
+        private readonly IEmployeeRepository _employeeRepository;
 
-        private readonly AppDbContext _context;
-
-        public EmployeeController(AppDbContext context)
+        public EmployeeController(IEmployeeRepository employeeRepository)
         {
-            _context = context;
+            _employeeRepository = employeeRepository;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            List<Employee> employees = _context.Employees.ToList();
+            IEnumerable<Employee> employees = await _employeeRepository.GetAll();
             return View(employees);
 
         }
-        public IActionResult Detail(int id)
+        public async Task<IActionResult> Detail(int id)
         {
-            Employee employee = _context.Employees.FirstOrDefault(x => x.Id == id);
+            Employee employee = await _employeeRepository.GetByIdAsync(id);
             return View(employee);
         }
     }

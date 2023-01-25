@@ -51,7 +51,7 @@ namespace GamesRental.Data
                         {
                             FirstName = "Robinson",
                             LastName = "Cruse"
-                        },
+                        }
                     });
                     context.SaveChanges();
                 }
