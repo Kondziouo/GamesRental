@@ -12,7 +12,7 @@ namespace GamesRental.Models
         [Required(ErrorMessage = "Last Name is required")]
         public string LastName { get; set; }
         [Required(ErrorMessage = "Date of birth is required")]
-        public DateOnly DateOfBirth { get; set; }
+        public DateTime DateOfBirth { get; set; }
         [RegularExpression("^[0-9]*$")]
         [Required(ErrorMessage = "Contact number is required")]
         public string ContactNumber { get; set; }
