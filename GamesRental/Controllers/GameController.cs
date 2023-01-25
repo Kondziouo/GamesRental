@@ -30,11 +30,6 @@ namespace GamesRental.Controllers
             return View(game);
         }
 
-        public IActionResult Create()
-        {
-            return View();
-        }
-
         [HttpPost]
         public async Task<IActionResult> Create (Game game)
         {
