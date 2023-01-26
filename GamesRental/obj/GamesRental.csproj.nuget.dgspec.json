@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Kondziouo\\Source\\Repos\\GamesRental\\GamesRental\\GamesRental.csproj": {}
+    "C:\\Users\\Kondziouo\\source\\repos\\GamesRental\\GamesRental\\GamesRental.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Kondziouo\\Source\\Repos\\GamesRental\\GamesRental\\GamesRental.csproj": {
+    "C:\\Users\\Kondziouo\\source\\repos\\GamesRental\\GamesRental\\GamesRental.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kondziouo\\Source\\Repos\\GamesRental\\GamesRental\\GamesRental.csproj",
+        "projectUniqueName": "C:\\Users\\Kondziouo\\source\\repos\\GamesRental\\GamesRental\\GamesRental.csproj",
         "projectName": "GamesRental",
-        "projectPath": "C:\\Users\\Kondziouo\\Source\\Repos\\GamesRental\\GamesRental\\GamesRental.csproj",
+        "projectPath": "C:\\Users\\Kondziouo\\source\\repos\\GamesRental\\GamesRental\\GamesRental.csproj",
         "packagesPath": "C:\\Users\\Kondziouo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Kondziouo\\Source\\Repos\\GamesRental\\GamesRental\\obj\\",
+        "outputPath": "C:\\Users\\Kondziouo\\source\\repos\\GamesRental\\GamesRental\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Kondziouo\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -9,93 +9,93 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = GamesRental
 build_property.RootNamespace = GamesRental
-build_property.ProjectDir = C:\Users\Kondziouo\Source\Repos\GamesRental\GamesRental\
+build_property.ProjectDir = C:\Users\Kondziouo\source\repos\GamesRental\GamesRental\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Kondziouo\Source\Repos\GamesRental\GamesRental
+build_property.MSBuildProjectDirectory = C:\Users\Kondziouo\source\repos\GamesRental\GamesRental
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Kondziouo/Source/Repos/GamesRental/GamesRental/Views/Employee/Create.cshtml]
+[C:/Users/Kondziouo/source/repos/GamesRental/GamesRental/Views/Employee/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Kondziouo/Source/Repos/GamesRental/GamesRental/Views/Employee/Delete.cshtml]
+[C:/Users/Kondziouo/source/repos/GamesRental/GamesRental/Views/Employee/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Kondziouo/Source/Repos/GamesRental/GamesRental/Views/Employee/Detail.cshtml]
+[C:/Users/Kondziouo/source/repos/GamesRental/GamesRental/Views/Employee/Detail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcRGV0YWlsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Kondziouo/Source/Repos/GamesRental/GamesRental/Views/Employee/Edit.cshtml]
+[C:/Users/Kondziouo/source/repos/GamesRental/GamesRental/Views/Employee/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Kondziouo/Source/Repos/GamesRental/GamesRental/Views/Employee/Index.cshtml]
+[C:/Users/Kondziouo/source/repos/GamesRental/GamesRental/Views/Employee/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZWVcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Kondziouo/Source/Repos/GamesRental/GamesRental/Views/Game/Create.cshtml]
+[C:/Users/Kondziouo/source/repos/GamesRental/GamesRental/Views/Game/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FtZVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Kondziouo/Source/Repos/GamesRental/GamesRental/Views/Game/Delete.cshtml]
+[C:/Users/Kondziouo/source/repos/GamesRental/GamesRental/Views/Game/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FtZVxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Kondziouo/Source/Repos/GamesRental/GamesRental/Views/Game/Detail.cshtml]
+[C:/Users/Kondziouo/source/repos/GamesRental/GamesRental/Views/Game/Detail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FtZVxEZXRhaWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Kondziouo/Source/Repos/GamesRental/GamesRental/Views/Game/Edit.cshtml]
+[C:/Users/Kondziouo/source/repos/GamesRental/GamesRental/Views/Game/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FtZVxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Kondziouo/Source/Repos/GamesRental/GamesRental/Views/Game/Index.cshtml]
+[C:/Users/Kondziouo/source/repos/GamesRental/GamesRental/Views/Game/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FtZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Kondziouo/Source/Repos/GamesRental/GamesRental/Views/Home/Index.cshtml]
+[C:/Users/Kondziouo/source/repos/GamesRental/GamesRental/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Kondziouo/Source/Repos/GamesRental/GamesRental/Views/Home/Privacy.cshtml]
+[C:/Users/Kondziouo/source/repos/GamesRental/GamesRental/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Kondziouo/Source/Repos/GamesRental/GamesRental/Views/Shared/Error.cshtml]
+[C:/Users/Kondziouo/source/repos/GamesRental/GamesRental/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Kondziouo/Source/Repos/GamesRental/GamesRental/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Kondziouo/source/repos/GamesRental/GamesRental/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Kondziouo/Source/Repos/GamesRental/GamesRental/Views/User/Create.cshtml]
+[C:/Users/Kondziouo/source/repos/GamesRental/GamesRental/Views/User/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Kondziouo/Source/Repos/GamesRental/GamesRental/Views/User/Delete.cshtml]
+[C:/Users/Kondziouo/source/repos/GamesRental/GamesRental/Views/User/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Kondziouo/Source/Repos/GamesRental/GamesRental/Views/User/Detail.cshtml]
+[C:/Users/Kondziouo/source/repos/GamesRental/GamesRental/Views/User/Detail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxEZXRhaWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Kondziouo/Source/Repos/GamesRental/GamesRental/Views/User/Index.cshtml]
+[C:/Users/Kondziouo/source/repos/GamesRental/GamesRental/Views/User/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Kondziouo/Source/Repos/GamesRental/GamesRental/Views/_ViewImports.cshtml]
+[C:/Users/Kondziouo/source/repos/GamesRental/GamesRental/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Kondziouo/Source/Repos/GamesRental/GamesRental/Views/_ViewStart.cshtml]
+[C:/Users/Kondziouo/source/repos/GamesRental/GamesRental/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Kondziouo/Source/Repos/GamesRental/GamesRental/Views/Shared/_Layout.cshtml]
+[C:/Users/Kondziouo/source/repos/GamesRental/GamesRental/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-dngppdj9y4

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jZQZHmcn3447yjbGmxhK5DqVtDawqWz71UwUmONF9DD/4Pv6t10q/494IWnvl1K/6OCRxyEcQN2L3u/h3OhbTA==",
+  "dgSpecHash": "87osgiKE4IcWwu10oHfSj6SThiHMNEUOLyPXFEJnBsVi1aLRTfwA/XT2UMI8wwNJ8N4syhiodVdwx/BHQ1Cd1w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Kondziouo\\Source\\Repos\\GamesRental\\GamesRental\\GamesRental.csproj",
+  "projectFilePath": "C:\\Users\\Kondziouo\\source\\repos\\GamesRental\\GamesRental\\GamesRental.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Kondziouo\\.nuget\\packages\\cloudinarydotnet\\1.20.0\\cloudinarydotnet.1.20.0.nupkg.sha512",
     "C:\\Users\\Kondziouo\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
