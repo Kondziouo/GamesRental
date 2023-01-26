@@ -122,5 +122,24 @@ namespace GamesRental.Controllers
             }
         }
 
+
+        public async Task<IActionResult> Delete (int id)
+        {
+            var gameDetails = await _gameRepository.GetByIdAsync(id);
+            if (gameDetails == null) return View("Error");
+            return View(gameDetails);
+        }
+
+        [HttpPost, ActionName("Delete")]
+        public async Task<IActionResult> DeleteGame(int id)
+        {
+            var gameDetails = await _gameRepository.GetByIdAsync(id);
+            if (gameDetails == null) return View("Error");
+
+            _gameRepository.Delete(gameDetails);
+            return RedirectToAction("Index");
+        }
+
+
     }
 }

@@ -37,7 +37,7 @@ namespace GamesRental.Controllers
         [HttpPost]
         public async Task<IActionResult> Create(CreateEmployeeViewModel employeeVM)
         {
-            if (!ModelState.IsValid)
+            if (ModelState.IsValid)
             {
                 var employee = new Employee
                 {
@@ -103,6 +103,23 @@ namespace GamesRental.Controllers
             {
                 return View(employeeVM);
             }
+        }
+
+        public async Task<IActionResult> Delete(int id)
+        {
+            var employeeDetails = await _employeeRepository.GetByIdAsync(id);
+            if (employeeDetails == null) return View("Error");
+            return View(employeeDetails);
+        }
+
+        [HttpPost, ActionName("Delete")]
+        public async Task<IActionResult> DeleteEmployee(int id)
+        {
+            var employeeDetails = await _employeeRepository.GetByIdAsync(id);
+            if (employeeDetails == null) return View("Error");
+
+            _employeeRepository.Delete(employeeDetails);
+            return RedirectToAction("Index");
         }
 
 

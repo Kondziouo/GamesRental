@@ -16,35 +16,17 @@
                         <div class="card-body">
                             <p class="card-text">@item.FirstName</p>
                             <p class="card-text">@item.LastName</p>
+                            <p class="card-text">@item.email</p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
                                     <a type="btn btn-success" asp-controller="User" asp-action="Detail" asp-route-id="@item.Id" type="button" class="btn btn-sm btn-outline-secondary">View</a>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Delete</button>
+                                    <a type="button" asp-controller="User" asp-action="Delete" asp-route-id="@item.Id" type="button" class="btn btn-sm btn-outline-secondary">Delete</a>
                                 </div>
-                                <small class="text-muted">9 mins</small>
                             </div>
                         </div>
                     </div>
                 </div>
-            }      
-            
-            <div class="col">
-                <div class="card shadow-sm">
-                    <div class="card-body">
-                        <p class="card-text">Name: Tom</p>
-                        <p class="card-text">Surname: Weslley</p>
-
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="btn-group">
-                                <a type="btn btn-success" asp-controller="User" asp-action="Detail" asp-route-id="" type="button" class="btn btn-sm btn-outline-secondary">View</a>
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Delete</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            }                
 
         </div>
     </div>
