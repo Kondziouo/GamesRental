@@ -20,7 +20,7 @@
                                 <div class="btn-group">
                                     <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
                                     <a type="btn btn-success" asp-controller="Game" asp-action="Detail" asp-route-id="@item.Id" type="button" class="btn btn-sm btn-outline-secondary">View</a>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                                    <a type="button" asp-controller="Game" asp-action="Edit" asp-route-id="@item.Id" type="button" class="btn btn-sm btn-outline-secondary">Edit</a>
                                     <button type="button" class="btn btn-sm btn-outline-secondary">Delete</button>
                                 </div>
                                 <small class="text-muted"> @item.Price $</small>

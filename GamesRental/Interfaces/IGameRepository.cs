@@ -6,6 +6,7 @@ namespace GamesRental.Interfaces
     {
         Task<IEnumerable<Game>> GetAll();
         Task<Game> GetByIdAsync(int id);
+        Task<Game> GetByIdAsyncNoTracking(int id);
         Task<IEnumerable<Game>> GetGameByTittle(string tittle);
         bool Add (Game game);  
         bool Update (Game game);    

@@ -6,6 +6,7 @@ namespace GamesRental.Interfaces
     {
         Task<IEnumerable<Employee>> GetAll();
         Task<Employee> GetByIdAsync(int id);
+        Task<Employee> GetByIdAsyncNoTracking(int id);
         Task<IEnumerable<Employee>> GetEmployeesByEmail(string email);
         bool Add(Employee employee);
         bool Update(Employee employee);

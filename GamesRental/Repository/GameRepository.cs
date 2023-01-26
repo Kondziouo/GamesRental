@@ -36,6 +36,12 @@ namespace GamesRental.Repository
             //return await _context.Games.Include(i => i.).FirstOrDefaultAsync(x => x.Id == id);
         }
 
+        public async Task<Game> GetByIdAsyncNoTracking(int id)
+        {
+            return await _context.Games.AsNoTracking().FirstOrDefaultAsync(x => x.Id == id);
+            //return await _context.Games.Include(i => i.).FirstOrDefaultAsync(x => x.Id == id);
+        }
+
         public async Task<IEnumerable<Game>> GetGameByTittle(string tittle)
         {
             return await _context.Games.Where(c => c.Title.Contains(tittle)).ToListAsync();

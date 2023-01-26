@@ -3,6 +3,8 @@ using GamesRental.Interfaces;
 using GamesRental.Models;
 using Microsoft.AspNetCore.Mvc;
 using GamesRental.Repository;
+using GamesRental.ViewModels;
+using GamesRental.Services;
 
 namespace GamesRental.Controllers
 {
@@ -33,15 +35,76 @@ namespace GamesRental.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create(Employee employee)
+        public async Task<IActionResult> Create(CreateEmployeeViewModel employeeVM)
         {
             if (!ModelState.IsValid)
             {
-                return View(employee);
+                var employee = new Employee
+                {
+                    FirstName = employeeVM.FirstName,
+                    LastName = employeeVM.LastName,
+                    DateOfBirth = employeeVM.DateOfBirth,
+                    ContactNumber = employeeVM.ContactNumber,
+                    Email = employeeVM.Email
+                };
+                _employeeRepository.Add(employee);
+                return RedirectToAction("Index");
             }
-            _employeeRepository.Add(employee);
-            return RedirectToAction("Index");
+            else
+            {
+                ModelState.AddModelError("", "Edit failed");
+            }
+            return View();
         }
+
+        public async Task<IActionResult> Edit(int id)
+        {
+            var employee = await _employeeRepository.GetByIdAsync(id);
+            if (employee == null) return View("Error");
+            var employeeVM = new EditEmployeeViewModel
+            {
+                FirstName = employee.FirstName,
+                LastName = employee.LastName,
+                DateOfBirth= employee.DateOfBirth,
+                ContactNumber = employee.ContactNumber,
+                Email = employee.Email
+            };
+            return View(employeeVM);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Edit(int id, EditEmployeeViewModel employeeVM)
+        {
+            if (!ModelState.IsValid)
+            {
+                ModelState.AddModelError("", "Failed to edit game");
+                return View("Edit", employeeVM);
+            }
+
+            var userEmployee = await _employeeRepository.GetByIdAsyncNoTracking(id);
+
+            if (userEmployee != null)
+            {
+                var employee = new Employee
+                {
+                    Id = id,
+                    FirstName = employeeVM.FirstName,
+                    LastName = employeeVM.LastName,
+                    DateOfBirth = employeeVM.DateOfBirth,
+                    ContactNumber = employeeVM.ContactNumber,
+                    Email = employeeVM.Email
+                };
+
+                _employeeRepository.Update(employee);
+
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                return View(employeeVM);
+            }
+        }
+
 
 
     }
