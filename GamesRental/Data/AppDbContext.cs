@@ -24,7 +24,6 @@ namespace GamesRental.Data
             builder.ApplyConfiguration(new ApplcationUserEntityConfigruation());
         }
     }
-
     public class ApplcationUserEntityConfigruation : IEntityTypeConfiguration<Customer>
     {
         public void Configure(EntityTypeBuilder<Customer> builder)
@@ -34,4 +33,5 @@ namespace GamesRental.Data
 
         }
     }
+
 }

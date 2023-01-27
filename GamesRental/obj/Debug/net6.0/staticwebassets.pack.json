@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\Kondziouo\\Source\\Repos\\GamesRental\\GamesRental\\wwwroot\\img\\background-img.jpg",
+      "PackagePath": "staticwebassets\\img\\background-img.jpg"
+    },
+    {
       "Id": "C:\\Users\\Kondziouo\\Source\\Repos\\GamesRental\\GamesRental\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
