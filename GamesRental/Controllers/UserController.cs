@@ -3,9 +3,11 @@ using Microsoft.AspNetCore.Mvc;
 using GamesRental.Models;
 using GamesRental.Interfaces;
 using GamesRental.Repository;
+using Microsoft.AspNetCore.Authorization;
 
 namespace GamesRental.Controllers
 {
+    [Authorize(Roles = "Admin")]
     public class UserController : Controller
     {
         private readonly IUserRepository _userRepository;

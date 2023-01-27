@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "87osgiKE4IcWwu10oHfSj6SThiHMNEUOLyPXFEJnBsVi1aLRTfwA/XT2UMI8wwNJ8N4syhiodVdwx/BHQ1Cd1w==",
+  "dgSpecHash": "xpuMc6eKDobPCUStGvXwwqYpGmc56aAKhzkpe9GvrVYPFg2uEP7W7YpIQveRx7frER5Db/rbeqD7FfybobhD0Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Kondziouo\\source\\repos\\GamesRental\\GamesRental\\GamesRental.csproj",
+  "projectFilePath": "C:\\Users\\Kondziouo\\Source\\Repos\\GamesRental\\GamesRental\\GamesRental.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Kondziouo\\.nuget\\packages\\cloudinarydotnet\\1.20.0\\cloudinarydotnet.1.20.0.nupkg.sha512",
     "C:\\Users\\Kondziouo\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
@@ -14,7 +14,7 @@
     "C:\\Users\\Kondziouo\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Kondziouo\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Kondziouo\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.2.0\\microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
-    "C:\\Users\\Kondziouo\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\6.0.12\\microsoft.aspnetcore.identity.entityframeworkcore.6.0.12.nupkg.sha512",
+    "C:\\Users\\Kondziouo\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\6.0.13\\microsoft.aspnetcore.identity.entityframeworkcore.6.0.13.nupkg.sha512",
     "C:\\Users\\Kondziouo\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.13\\microsoft.aspnetcore.identity.ui.6.0.13.nupkg.sha512",
     "C:\\Users\\Kondziouo\\.nuget\\packages\\microsoft.aspnetcore.razor.language\\6.0.0\\microsoft.aspnetcore.razor.language.6.0.0.nupkg.sha512",
     "C:\\Users\\Kondziouo\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\5.0.0\\microsoft.bcl.asyncinterfaces.5.0.0.nupkg.sha512",

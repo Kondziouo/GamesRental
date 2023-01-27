@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace GamesRental.Models
 {
-    public class Employee : IdentityUser
+    public class Employee 
     {
         [Key]
         public int Id { get; set; }

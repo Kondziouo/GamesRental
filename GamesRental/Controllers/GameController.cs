@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using GamesRental.Repository;
 using GamesRental.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 
 namespace GamesRental.Controllers
 {
@@ -32,12 +33,13 @@ namespace GamesRental.Controllers
             Game game = await _gameRepository.GetByIdAsync(id);
             return View(game);
         }
-
+        [Authorize(Roles = "Admin")]
         public IActionResult Create()
         {
             return View();
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpPost]
         public async Task<IActionResult> Create(CreateGameViewModel gameVM)
         {
@@ -63,7 +65,7 @@ namespace GamesRental.Controllers
             return View(gameVM);
 
         }
-
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Edit(int id)
         {
             var game = await _gameRepository.GetByIdAsync(id);
@@ -77,7 +79,7 @@ namespace GamesRental.Controllers
             };
             return View(gameVM);
         }
-
+        [Authorize(Roles = "Admin")]
         [HttpPost]
         public async Task<IActionResult> Edit(int id, EditGameViewModel gameVM)
         {
@@ -122,7 +124,7 @@ namespace GamesRental.Controllers
             }
         }
 
-
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete (int id)
         {
             var gameDetails = await _gameRepository.GetByIdAsync(id);
@@ -130,6 +132,7 @@ namespace GamesRental.Controllers
             return View(gameDetails);
         }
 
+        [Authorize(Roles = "Admin")]
         [HttpPost, ActionName("Delete")]
         public async Task<IActionResult> DeleteGame(int id)
         {

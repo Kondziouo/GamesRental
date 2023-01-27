@@ -5,9 +5,11 @@ using Microsoft.AspNetCore.Mvc;
 using GamesRental.Repository;
 using GamesRental.ViewModels;
 using GamesRental.Services;
+using Microsoft.AspNetCore.Authorization;
 
 namespace GamesRental.Controllers
 {
+    [Authorize(Roles = "Admin")]
     public class EmployeeController : Controller
     {
         private readonly IEmployeeRepository _employeeRepository;
@@ -28,12 +30,12 @@ namespace GamesRental.Controllers
             Employee employee = await _employeeRepository.GetByIdAsync(id);
             return View(employee);
         }
-
+        [Authorize(Roles = "Admin")]
         public IActionResult Create()
         {
             return View();
         }
-
+        [Authorize(Roles = "Admin")]
         [HttpPost]
         public async Task<IActionResult> Create(CreateEmployeeViewModel employeeVM)
         {

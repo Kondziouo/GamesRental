@@ -1,4 +1,6 @@
 ﻿@model IEnumerable<Game>
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
 @*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
@@ -22,8 +24,11 @@
                                 <div class="btn-group">
                                     <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
                                     <a type="btn btn-success" asp-controller="Game" asp-action="Detail" asp-route-id="@item.Id" type="button" class="btn btn-sm btn-outline-secondary">View</a>
-                                    <a type="button" asp-controller="Game" asp-action="Edit" asp-route-id="@item.Id" type="button" class="btn btn-sm btn-outline-secondary">Edit</a>
-                                    <a type="button" asp-controller="Game" asp-action="Delete" asp-route-id="@item.Id" type="button" class="btn btn-sm btn-outline-secondary">Delete</a>
+                                    @if (SignInManager.IsSignedIn(User) && User.IsInRole("Admin"))
+                                    {
+                                        <a type="button" asp-controller="Game" asp-action="Edit" asp-route-id="@item.Id" type="button" class="btn btn-sm btn-outline-secondary">Edit</a>
+                                        <a type="button" asp-controller="Game" asp-action="Delete" asp-route-id="@item.Id" type="button" class="btn btn-sm btn-outline-secondary">Delete</a>
+                                    }
                                 </div>
                                 <small class="text-muted"> @item.Price $</small>
                             </div>
