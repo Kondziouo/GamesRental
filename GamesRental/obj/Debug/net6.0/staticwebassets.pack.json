@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\img\\background-img.jpg"
     },
     {
+      "Id": "C:\\Users\\Kondziouo\\Source\\Repos\\GamesRental\\GamesRental\\wwwroot\\img\\game.jpg",
+      "PackagePath": "staticwebassets\\img\\game.jpg"
+    },
+    {
       "Id": "C:\\Users\\Kondziouo\\Source\\Repos\\GamesRental\\GamesRental\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

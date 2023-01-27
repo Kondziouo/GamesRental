@@ -36,3 +36,14 @@ body {
     z-index: 0;
 }
 
+.game {
+    position: relative;
+    height: 60rem;
+    background-image: url(../img/game.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+}
+
+
+
