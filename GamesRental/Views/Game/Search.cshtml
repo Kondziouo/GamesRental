@@ -5,8 +5,6 @@
 @{
 }
 
-<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-
 <div class="game album py-5 bg-light">
     <div class="container-fluid">
         <div class="row row-cols-1 row-cols-2 row-cols-3 row-cols-4 row-cols-5 row-cols-6">
@@ -22,10 +20,8 @@
                                 <div class="btn-group">
                                     <button type="button" class="btn btn-dark btn-sm" class="btn btn-sm btn-outline-secondary">Buy</button>
                                     <a type="btn btn-success" class="btn btn-dark btn-sm" asp-controller="Game" asp-action="Detail" asp-route-id="@item.Id" type="button" class="btn btn-sm btn-outline-secondary">View</a>
-                                    {
-                                        <a type="button" class="btn btn-dark btn-sm" asp-controller="Game" asp-action="Edit" asp-route-id="@item.Id" type="button" class="btn btn-sm btn-outline-secondary">Edit</a>
-                                        <a type="button" class="btn btn-dark btn-sm" asp-controller="Game" asp-action="Delete" asp-route-id="@item.Id" type="button" class="btn btn-sm btn-outline-secondary">Delete</a>
-                                    }
+                                    <a type="button" class="btn btn-dark btn-sm" asp-controller="Game" asp-action="Edit" asp-route-id="@item.Id" type="button" class="btn btn-sm btn-outline-secondary">Edit</a>
+                                    <a type="button" class="btn btn-dark btn-sm" asp-controller="Game" asp-action="Delete" asp-route-id="@item.Id" type="button" class="btn btn-sm btn-outline-secondary">Delete</a>
                                 </div>
                                 <small class="text-muted"> @item.Price $</small>
                             </div>
