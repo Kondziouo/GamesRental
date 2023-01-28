@@ -11,6 +11,15 @@
 
 <div class="game album py-5 bg-light">
     <div class="container-fluid">
+        <form asp-controller="Game" asp-action="Search" method="get">
+            <div class="container">               
+                <div class="formtile">
+                    <label for="Title" class="formlabel">Title</label>
+                    <input id="Title" type="text" class="forminput" name="Title" />
+                </div>
+                <button type="submit" class="btn btn-primary">Search</button>
+            </div>
+        </form>
         <div class="row row-cols-1 row-cols-2 row-cols-3 row-cols-4 row-cols-5 row-cols-6">
             @foreach (var item in Model)
             {
