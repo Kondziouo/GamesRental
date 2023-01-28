@@ -13,11 +13,13 @@ namespace GamesRental.Controllers
     {
         private readonly IGameRepository _gameRepository;
         private readonly IPhotoService _photoService;
+        private readonly AppDbContext _context;
 
-        public GameController(IGameRepository gameRepository, IPhotoService photoService)
+        public GameController(IGameRepository gameRepository, IPhotoService photoService, AppDbContext context)
         {
             _gameRepository = gameRepository;
             _photoService = photoService;
+            _context = context;
         }
 
 
@@ -141,6 +143,19 @@ namespace GamesRental.Controllers
 
             _gameRepository.Delete(gameDetails);
             return RedirectToAction("Index");
+        }
+
+        public async Task<IActionResult> Search(string tittle)
+        {
+            var game = from m in _context.Games
+                           select m;
+
+            if (!string.IsNullOrEmpty(tittle))
+            {
+                game = game.Where(x => x.Title!.Contains(tittle));
+            }
+
+            return View(game.ToList());
         }
 
 
