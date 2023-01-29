@@ -5,30 +5,33 @@
 *@
 @{
 }
-<div class="container">
-    <form method="post" asp-action="Edit" enctype="multipart/form-data">
-    <!-- hidden field to store AddressId for Address-->
-    <input type="hidden" value="AddressId" />
-    <div class="form-group">
-        <label asp-for="Image">Image</label>
-        <input asp-for="Image" type="file" class="form-control" placeholder="Image">
-        <span asp-validation-for="Image" class="text-danger"></span>
+<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+<div class="edit">
+    <div class="container">
+        <form method="post" asp-action="Edit" enctype="multipart/form-data">
+            <!-- hidden field to store AddressId for Address-->
+            <input type="hidden" value="AddressId" />
+            <div class="form-group">
+                <label asp-for="Image">Image</label>
+                <input asp-for="Image" type="file" class="form-control" placeholder="Image">
+                <span asp-validation-for="Image" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Title">Title</label>
+                <input asp-for="Title" class="form-control" placeholder="Title">
+                <span asp-validation-for="Title" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Description">Description</label>
+                <input asp-for="Description" class="form-control" placeholder="Description">
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Price">Price</label>
+                <input asp-for="Price" class="form-control" placeholder="Price">
+                <span asp-validation-for="Price" class="text-danger"></span>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
     </div>
-    <div class="form-group">
-        <label asp-for="Title">Title</label>
-        <input asp-for="Title" class="form-control" placeholder="Title">
-        <span asp-validation-for="Title" class="text-danger"></span>
-    </div>
-    <div class="form-group">
-        <label asp-for="Description">Description</label>
-        <input asp-for="Description" class="form-control" placeholder="Description">
-        <span asp-validation-for="Description" class="text-danger"></span>
-    </div>
-    <div class="form-group">
-        <label asp-for="Price">Price</label>
-        <input asp-for="Price" class="form-control" placeholder="Price">
-        <span asp-validation-for="Price" class="text-danger"></span>
-    </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
-</form>
 </div>

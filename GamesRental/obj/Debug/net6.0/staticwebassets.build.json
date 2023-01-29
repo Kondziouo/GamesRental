@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "AsfYItB8LLD0iHRfzwpAvvWH85Kmey6H7BOpzTkZpFo=",
+  "Hash": "f2ZX8ZoSlA4PCMO+EtBKrpRJJ9gDGOsnSeFamHtfET4=",
   "Source": "GamesRental",
   "BasePath": "_content/GamesRental",
   "Mode": "Default",
@@ -1120,6 +1120,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\background-img.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Kondziouo\\Source\\Repos\\GamesRental\\GamesRental\\wwwroot\\img\\delete.png",
+      "SourceId": "GamesRental",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Kondziouo\\Source\\Repos\\GamesRental\\GamesRental\\wwwroot\\",
+      "BasePath": "_content/GamesRental",
+      "RelativePath": "img/delete.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\delete.png"
+    },
+    {
+      "Identity": "C:\\Users\\Kondziouo\\Source\\Repos\\GamesRental\\GamesRental\\wwwroot\\img\\edit.png",
+      "SourceId": "GamesRental",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Kondziouo\\Source\\Repos\\GamesRental\\GamesRental\\wwwroot\\",
+      "BasePath": "_content/GamesRental",
+      "RelativePath": "img/edit.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\edit.png"
     },
     {
       "Identity": "C:\\Users\\Kondziouo\\Source\\Repos\\GamesRental\\GamesRental\\wwwroot\\img\\game.jpg",

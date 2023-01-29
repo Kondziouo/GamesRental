@@ -37,13 +37,48 @@ body {
 }
 
 .game {
-    position: relative;
+    background-color: deepskyblue;
+   /* position: relative;
     height: 60rem;
     background-image: url(../img/game.jpg);
-    background-size: cover;
+    background-repeat: repeat;
+    background-size: contain;
+    background-position: center;
+    z-index: 0;*/
+}
+
+.home-G4U {
+    font-size: 200px;
+}
+
+.home-button {
+    font-size: 40px;
+    color: whitesmoke;
+    background-color: dodgerblue;
+}
+
+.price {
+    color: red;
+}
+
+
+.delete {
+    position: relative;
+    height: 40rem;
+    background-image: url(../img/delete.png);
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: center;
     z-index: 0;
 }
 
-
+.edit {
+    position: relative;
+    height: 40rem;
+    background-image: url(../img/edit.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 0;
+}
 

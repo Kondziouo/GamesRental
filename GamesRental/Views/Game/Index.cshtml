@@ -9,7 +9,7 @@
 
 <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
 
-<div class="game album py-5 bg-light">
+<div class="game ">
     <div class="container-fluid">
         <form asp-controller="Game" asp-action="Search" method="get">
             <div class="container">               
@@ -39,7 +39,7 @@
                                         <a type="button" class="btn btn-dark btn-sm" asp-controller="Game" asp-action="Delete" asp-route-id="@item.Id" type="button" class="btn btn-sm btn-outline-secondary">Delete</a>
                                     }
                                 </div>
-                                <small class="text-muted"> @item.Price $</small>
+                                <small class="price "> @item.Price $</small>
                             </div>
                         </div>
                     </div>

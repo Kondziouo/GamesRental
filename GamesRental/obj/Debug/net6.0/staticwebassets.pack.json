@@ -17,6 +17,14 @@
       "PackagePath": "staticwebassets\\img\\background-img.jpg"
     },
     {
+      "Id": "C:\\Users\\Kondziouo\\Source\\Repos\\GamesRental\\GamesRental\\wwwroot\\img\\delete.png",
+      "PackagePath": "staticwebassets\\img\\delete.png"
+    },
+    {
+      "Id": "C:\\Users\\Kondziouo\\Source\\Repos\\GamesRental\\GamesRental\\wwwroot\\img\\edit.png",
+      "PackagePath": "staticwebassets\\img\\edit.png"
+    },
+    {
       "Id": "C:\\Users\\Kondziouo\\Source\\Repos\\GamesRental\\GamesRental\\wwwroot\\img\\game.jpg",
       "PackagePath": "staticwebassets\\img\\game.jpg"
     },
