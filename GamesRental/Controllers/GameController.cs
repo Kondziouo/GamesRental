@@ -145,14 +145,14 @@ namespace GamesRental.Controllers
             return RedirectToAction("Index");
         }
 
-        public async Task<IActionResult> Search(string tittle)
+        public async Task<IActionResult> Search(string title)
         {
             var game = from m in _context.Games
                            select m;
 
-            if (!string.IsNullOrEmpty(tittle))
+            if (!string.IsNullOrEmpty(title))
             {
-                game = game.Where(x => x.Title!.Contains(tittle));
+                game = game.Where(x => x.Title!.Contains(title));
             }
 
             return View(game.ToList());
