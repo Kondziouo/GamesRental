@@ -214,7 +214,7 @@ namespace GamesRental.Data
                },
                new Employee
                {
-                   Id = 1,
+                   Id = 3,
                    FirstName = "Jean",
                    LastName = "Bush",
                    DateOfBirth = new DateTime(1975, 9, 21, 10, 0, 0),
