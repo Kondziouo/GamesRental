@@ -89,7 +89,6 @@ namespace GamesRental.Controllers
             {
                 var employee = new Employee
                 {
-                    Id = id,
                     FirstName = employeeVM.FirstName,
                     LastName = employeeVM.LastName,
                     DateOfBirth = employeeVM.DateOfBirth,

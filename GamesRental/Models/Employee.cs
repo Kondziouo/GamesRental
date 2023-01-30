@@ -3,9 +3,9 @@ using System.ComponentModel.DataAnnotations;
 
 namespace GamesRental.Models
 {
-    public class Employee 
+    public class Employee
     {
-        [Key]
+        [Key] 
         public int Id { get; set; }
         [Required(ErrorMessage = "First Name is required")]
         public string FirstName { get; set; }
