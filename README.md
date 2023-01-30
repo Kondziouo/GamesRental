@@ -16,4 +16,4 @@
 - C#
 - CSS
 - HTML
-- Bootstrap 5
+- Bootstrap
