@@ -13,7 +13,6 @@
  
  ## Technologies Used
 - ASP.NET MVC
-- T-SQL
 - C#
 - CSS
 - HTML
